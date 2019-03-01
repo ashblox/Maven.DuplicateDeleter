@@ -1,5 +1,6 @@
 package com.zipcodewilmington.looplabs;
 
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -19,7 +20,6 @@ public class IntegerDuplicateDeleterTest {
         this.intArray = new Integer[]{0, 0, 0, 1, 2, 2, 4, 4, 5, 5, 5, 6, 9, 9, 9};
         this.deleter = new IntegerDuplicateDeleter(intArray);
     }
-
 
     @Test
     public void testRemoveDuplicatesExactlyExactly() {
@@ -56,29 +56,6 @@ public class IntegerDuplicateDeleterTest {
         Integer[] actual = deleter.removeDuplicatesExactly(3);
         TestUtils.assertArrayEquality(expected, actual);
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
